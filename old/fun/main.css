@@ -1,0 +1,54 @@
+.bg > div {
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	position: fixed;
+	overflow: scroll;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#bg {
+	background-image: url('images/background.jpg');
+	z-index: -10000;
+	opacity: 1;
+}
+
+#bgBlurred {
+	background-image: url('images/background-blurred.jpg');
+	transition: opacity 2s ease-in-out;
+	z-index: -1000;
+	opacity: 0;
+}
+
+h1 {
+	margin-top: 10%;
+	color: white;
+	text-align: center;
+	font-size: 100px;
+	font-family: poiret-one, sans-serif;
+}
+
+#avatar {
+	background-image: url('images/avatar.jpg');
+	background-size: 100% 100%;
+	margin-top: 8%;
+	width: 15%;
+	padding-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10000px;
+	cursor: pointer;
+	border: 5px solid white;
+	box-shadow: 0px 5px 5px rgba(0,0,0,.4);
+	transition: all 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+#avatar:active {
+	transform: scale(2) rotate(180deg) skew(75deg,80deg);
+	-webkit-transform: scale(2) rotate(180deg) skew(75deg,80deg);
+	-ms-transform: scale(2) rotate(180deg) skew(75deg,80deg);
+	-moz-transform: scale(2) rotate(180deg) skew(75deg,80deg);
+	-o-transform: scale(2) rotate(180deg) skew(75deg,80deg);
+}

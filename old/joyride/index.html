@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>iD Joyride</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<script src="http://use.edgefonts.net/acme.js"></script> 
+	<link rel='stylesheet' type='text/css' href='main.css' />
+</head>
+
+<body>
+	<canvas id='pageBg'></canvas>
+	<div id='startPage'>
+		<canvas id='startCanvas'></canvas>
+		<img id='logo' src='images/logo.png'></img>
+		<p id='startText'>Press Space to Start<br />Press P to Select Character</p>
+	</div>
+	<div id='characterSelect'>
+		<p id='characterText'>Select your character!</p>
+		<table id='characterSelectImg' align='center'>
+			<tr>
+			<td><img id='copycatImg' src='images/player/player-copycat.gif'></img><p>Copycat</p></td>
+			<td><img id='engineImg' src='images/player/player-engine.gif'></img><p>Engine</p></td>
+			<td><img id='sujayImg' src='images/player/player-sujay.gif'></img><p>Heracross</p></td>
+			</tr>
+		</table>
+	</div>
+	<canvas id='cover'></canvas>
+	<canvas id='gameCanvas'></canvas>
+	<img id='player'></img>
+	<div id='missiles'>
+		<img id='missile1' src='images/missile.png'></img>
+		<img id='missile2' src='images/missile.png'></img>
+	</div>
+	<div id='zappers'>
+		<img id='zapper1' src='images/zapper.png'></img>
+		<img id='zapper2' src='images/zapper.png' style='transform: rotate(90deg);'></img>
+	</div>
+	<img id='shieldExplosion'></img>
+	<canvas id='shield'></canvas>
+	<img id='shieldIcon' src='images/shield-icon.png'></img>
+	<p id='scoreCounter'></p>
+	<script src='main.js'></script>
+</body>
+</html>
