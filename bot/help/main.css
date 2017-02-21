@@ -3,8 +3,8 @@
 }
 
 #container {
-  margin: 50px 25%;
-  width: 50%;
+  margin: 50px 20px;
+  width: calc(100% - 40px);
 }
 
 h1 {

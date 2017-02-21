@@ -10,16 +10,16 @@ function toPhoneMode() {
 
 function toPcMode() {
   atPhoneMode = false;
-  $('#container').css('margin', '50px 30%');
-  $('#container').css('width', '40%');
+  $('#container').css('margin', '50px 25%');
+  $('#container').css('width', '50%');
 }
 
 setInterval(function() {
-  if ($(window).width() < 900) {
+  if ($(window).width() > 900) {
     if (!atPhoneMode) {
-      toPhoneMode();
+      toPcMode();
     }
   } else if (atPhoneMode) {
-    toPcMode();
+    toPhoneMode();
   }
 }, 500);
