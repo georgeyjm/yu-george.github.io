@@ -14,26 +14,44 @@
       <li>
         <code class='command-name'>说[WORDS]</code>
         <p class='description'>机器人将会发送（不带任何@）第一个“说”字后面所有的内容。</p>
+        <p class='example-in'>说你好世界！</p>
+        <p class='example-out'>你好世界！</p>
       </li>
       <li>
         <code class='command-name'>天气预报</code>
         <p class='description'>机器人将会报出上海的7天内的天气预报。</p>
+        <p class='example-in'>天气预报</p>
+        <p class='example-out'>略</p>
       </li>
       <li>
         <code class='command-name'>空气质量</code>
         <p class='description'>机器人将会报出当日上海的空气质量。</p>
+        <p class='example-in'>空气质量</p>
+        <p class='example-out'>今天上海空气指数为76，为良</p>
       </li>
       <li>
         <code class='command-name'>贴吧图片 &lt;URL&gt;</code>
         <p class='description'>机器人将会爬取该贴吧URL内的所有图片，并压缩之后发送ZIP文件。<br />注：贴吧URL的格式必须为http://tieba.baidu.com/p/88888888，不支持https，不支持任何?后面的内容。</p>
+        <p class='example-in'>贴吧图片 http://tieba.baidu.com/p/12345678</p>
+        <p class='example-out'>略</p>
       </li>
       <li>
         <code class='command-name'>贴吧文字 &lt;URL&gt;</code>
         <p class='description'>机器人将会爬取该贴吧URL内的所有文字，并发送TXT文件。<br />注：贴吧URL的格式必须为http://tieba.baidu.com/p/88888888，不支持https，不支持任何?后面的内容。</p>
+        <p class='example-in'>贴吧文字 http://tieba.baidu.com/p/12345678</p>
+        <p class='example-out'>略</p>
       </li>
       <li>
         <code class='command-name'>求数列 &lt;SEQUENCE&gt;</code>
         <p class='description'>机器人将会返回该数列的通项公式。只支持等差及等比数列（支持多级等差数列）。数列的元素需由逗号分隔。</p>
+        <p class='example-in'>求数列 3, 6, 12, 24, 48</p>
+        <p class='example-out'>公式是：An = 3 * 2**(n-1)</p>
+      </li>
+      <li>
+        <code class='command-name'>三角函数 &lt;FUNCTION&gt; &lt;VALUE&gt;</code>
+        <p class='description'>机器人将会返回给定角度的给定三角函数的值。</p>
+        <p class='example-in'>三角函数 sin 120</p>
+        <p class='example-out'>sin(120) = √3/2</p>
       </li>
     </ul>
   </div>

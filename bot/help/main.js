@@ -15,11 +15,11 @@ function toPcMode() {
 }
 
 setInterval(function() {
-  if ($(window).width() > 1600) {
+  if ($(window).width() < 1000) {
     if (!atPhoneMode) {
-      toPcMode();
+      toPhoneMode();
     }
   } else if (atPhoneMode) {
-    toPhoneMode();
+    toPcMode();
   }
 }, 500);

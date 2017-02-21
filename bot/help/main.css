@@ -3,8 +3,8 @@
 }
 
 #container {
-  margin: 50px 6%;
-  width: 88%;
+  margin: 50px 25%;
+  width: 50%;
 }
 
 h1 {
@@ -27,7 +27,26 @@ code.command-name {
   font-family: Menlo;
 }
 
-p.description {
+p {
+  font-size: 16px;
+  line-height: 24px;
   font-family: Helvetica;
+}
+
+p.description {
   padding-top: 10px;
+}
+
+p.example-in {
+  padding-top: 16px;
+}
+
+p.example-in::before {
+  content: '样例输入：';
+  font-weight: bold;
+}
+
+p.example-out::before {
+  content: '样例输出：';
+  font-weight: bold;
 }
