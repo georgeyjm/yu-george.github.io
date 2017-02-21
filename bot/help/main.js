@@ -15,7 +15,7 @@ function toPcMode() {
 }
 
 setInterval(function() {
-  if ($(window).width() > 900) {
+  if ($(window).width() > 1600) {
     if (!atPhoneMode) {
       toPcMode();
     }
