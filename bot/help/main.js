@@ -2,10 +2,10 @@ var atPhoneMode = false;
 
 function toPhoneMode() {
   atPhoneMode = true;
-  // $('#container').css('margin', '50px 6%');
-  // $('#container').css('width', '88%');
-  $('#container').css('margin', '50px 20px');
-  $('#container').css('width', 'calc(100% - 40px)');
+  $('#container').css('margin', '50px 6%');
+  $('#container').css('width', '88%');
+  // $('#container').css('margin', '50px 20px');
+  // $('#container').css('width', 'calc(100% - 40px)');
 }
 
 function toPcMode() {
