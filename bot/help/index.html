@@ -8,9 +8,16 @@
 	<script type='text/javascript' src='main.js'></script>
 </head>
 <body>
+  <div id='header'>
+    <ul id='header-elements'>
+      <li>介绍</li>
+      <li>功能</li>
+      <li>升级</li>
+    </ul>
+  </div>
   <div id='container'>
     <h1>饺子机器人帮助页面</h1>
-    <ul>
+    <ul id='command-list'>
       <li>
         <code class='command-name'>说[WORDS]</code>
         <p class='description'>机器人将会发送（不带任何@）第一个“说”字后面所有的内容。</p>
@@ -52,6 +59,18 @@
         <p class='description'>机器人将会返回给定角度的给定三角函数的值。</p>
         <p class='example-in'>三角函数 sin 120</p>
         <p class='example-out'>sin(120) = √3/2</p>
+      </li>
+      <li>
+        <code class='command-name'>转简体[/轉簡體][WORDS]</code>
+        <p class='description'>机器人将会返回给定文本的简体字。</p>
+        <p class='example-in'>转简体餃子機器人</p>
+        <p class='example-out'>饺子机器人</p>
+      </li>
+      <li>
+        <code class='command-name'>转繁体[/轉繁體][WORDS]</code>
+        <p class='description'>机器人将会返回给定文本的繁体字。</p>
+        <p class='example-in'>转繁体 饺子机器人<p>
+        <p class='example-out'>餃子機器人</p>
       </li>
     </ul>
   </div>
